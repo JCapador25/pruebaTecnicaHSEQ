@@ -23,7 +23,7 @@
             <h2>Descubre tu ruta de capacitación</h2>
             <p>Llena el formulario a continuación y descubre que capacitaciones se adaptan a ti</p>
             <div class="container">
-                <form class="row">
+                <form class="row" id="formularioUsuario" action="data.php" method="POST">
                     <h3>Datos Básicos</h3>
                     <div class="col-6">
                         <label for="nombreInput" class="form-label">Nombres: </label>
@@ -68,7 +68,7 @@
                     <h3>Perfil</h3>
                     
                     <label for="profesionSelect" class="form-label">Profesión: </label>
-                    <select class="form-select" id="profesionSelect" aria-label="Seleccione una opción">
+                    <select class="form-select" id="profesionSelect" name="profesion" aria-label="Seleccione una opción">
                         <option selected>Selecciona una opción</option>
                         <option value="1">Ingeniero/a de Sistemas</option>
                         <option value="2">Conductor/a</option>
@@ -77,7 +77,7 @@
                     </select>
 
                     <label for="areaSelect" class="form-label">Área de trabajo: </label>
-                    <select class="form-select" id="areaSelect" aria-label="Seleccione una opción">
+                    <select class="form-select" id="areaSelect" name="area" aria-label="Seleccione una opción">
                         <option selected>Selecciona una opción</option>
                         <option value="1">Tecnología e Innovación</option>
                         <option value="2">Recursos Humanos</option>
@@ -88,20 +88,20 @@
                     <h3>Jornada</h3>
                         <p>Seleccione la jornada en que desea tomar los cursos: </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                            <label class="form-check-label" for="radioDefault1">
+                            <input class="form-check-input" type="radio" name="jornada" id="radioDia" value="mañana" checked>
+                            <label class="form-check-label" for="radioDia">
                                 Mañana
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
-                            <label class="form-check-label" for="radioDefault2">
+                            <input class="form-check-input" type="radio" name="jornada" id="radioTarde" value="tarde">
+                            <label class="form-check-label" for="radioTarde">
                                 Tarde
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3" checked>
-                            <label class="form-check-label" for="radioDefault3">
+                            <input class="form-check-input" type="radio" name="jornada" id="radioNoche" value="noche">
+                            <label class="form-check-label" for="radioNoche">
                                 Noche
                             </label>
                         </div>
@@ -113,7 +113,7 @@
                     <input class="btn btn-primary" type="submit" value="Submit">
                 </form>
             </div>
-        </section class="InformacionEnviada" id="infoEnviada">
+        <section class="InformacionEnviada" id="infoEnviada">
             <h2>Esta es la información enviada en el formulario</h2>
             <div class="container-fluid">
                 <!--Información enviada-->
