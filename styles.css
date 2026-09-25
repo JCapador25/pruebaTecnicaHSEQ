@@ -1,4 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  color: #2b2d42;
+  background-color: #f8f9fa; /* Fondo gris claro suave para resaltar el contenido */
+}
+
 .logo {
     width: 120px;
     height: auto;
+}
+
+.navbar{
+background: linear-gradient(135deg, #ab73e8 0%, #446aac 100%) !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Una sombrita suave */
+  padding: 12px 0;
+}
+
+.navbar-brand{
+    color:#ffffff;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+h1, h2, h3 {
+  color: #7b30c6;
+  letter-spacing: -0.5px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  color: #240046;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  border-bottom: 5px solid #8333c0;
+  padding-bottom: 6px;
+  display: inline-block;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #5a189a;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(199, 125, 255, 0.2);
+  font-size: 1 rem;
+  color: #0c0216;
+  background: linear-gradient(180deg,  #d3baee 0%, #446aac 100%);
 }
